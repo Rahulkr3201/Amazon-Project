@@ -1,0 +1,328 @@
+*{
+    margin:0;
+    font-family:aerial;
+    border:border-box;
+}
+.off{
+    position:fixed;
+    top:500px;
+    right:-85px;
+    height:60px;
+    width:200px;
+    text-align:center;
+    background-color:#535766;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform:rotate(270deg);
+    animation-name:spread;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes spread{
+    0%{width:60px;}
+    66%{width:200px;}
+    100%{width:60px;}
+}
+.navbar{
+    justify-content:space-evenly;
+    height:60px;
+    background-color:#0f1111;
+    color:white;
+    display:flex;
+}
+.nav-logo{
+    
+    height:45px;
+    width:113px;
+    position:relative;
+    top:10px;
+
+}
+.logo{
+    background-image:url("amazon.logo.webp");
+    background-size:cover;
+    height:40px;
+    width:100%;
+}
+.border{
+    border:2px solid transpart;
+}
+.border:hover{
+    border:2px solid white;
+    cursor:pointer;
+}
+/* box2 */
+.add-one{
+    color:#cccccc;
+    font-size:0.9rem;
+    margin-left:15px;
+
+}
+.add-tw0{
+    font-size:1rem;
+}
+.add-icon{
+    margin-left:10px;
+    display:flex;
+    justify-content:space-evenly;
+}
+.nav-address{
+    height:41px;
+    position:relative;
+    top:9px;
+    left:10px;
+}
+.nav-search{
+    display:flex;
+    justify-content:space-evenly;
+    margin:10px 0px 10px 20px;
+    background-color:pink;
+    width:620px;
+    height:40px;
+    border-radius:4px;
+}
+.search-select{
+    border-radius:3px;
+    background-color:#f3f3f3;
+    width:50px;
+    text-align:center;
+    border:none;
+}
+.search-input{
+    /* width:500px;
+     */
+     width:100%;
+     font-size:1rem;
+     border:none;
+}
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2rem;/*icon size*/
+    background-color:#febd68;
+    color:#0f1111; /* color to the text imside here icon color*/
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+
+    /* above three lines to align 'search icon' in search icon using search-icon as parent */
+    /* flexbox is used to align,divide evenly etc;  */
+}
+.nav-search:hover{
+    border:3px solid orange;
+}
+.nav-signin{
+    position:relative;
+    top:10px;
+    height:40px;
+    width:100px;
+
+}
+.nav-returns{
+    position:relative;
+    top:10px;
+    height:40px;
+    width:60px;
+
+}
+.nav-first{
+    position:relative;
+    top:10px;
+    font-size:0.7rem;
+}
+.nav-second{
+    position:relative;
+    top:10px;
+    font-size:0.80rem;
+    font-weight:700px;
+}
+.nav-returns{
+    margin-left:25px;
+}
+.nav-cart{
+    height:40px;
+    width:60px;
+    margin-top:10px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0.85rem;
+    font-weight:600px;
+}
+.nav-cart i{
+    font-size:25px;
+}
+/* panel */
+.panel{
+    height:40px;
+    background-color:#222f3d;
+    display:flex;
+    color:white;
+    align-items:center;
+    /* for brimging all elements in panel to middle; */
+    justify-content:space-evenly;
+}
+.panel-ops p{
+    display:inline-block;
+    /* for bringing all para in one line */
+    margin-left:10px;
+    /* gap betweeen all p */
+
+}
+.p1:hover{
+    border:2px solid white;
+    cursor:pointer;
+}
+.panel-all:hover{
+    border:2px solid white;
+    cursor:pointer;
+}
+.panel-deals:hover{
+    border:2px solid white;
+}
+.panel-ops{
+    width:70%;
+    /* 70% area of total panel is occupied by only panel-ops */
+    font-size:0.9rem;
+}
+.panel-deals{
+    font-size:0.95rem;
+    font-weight:500px;
+}
+.hero-section{
+    height:400px;
+    background-image:url("amazon1.jpg");
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.hero-text{
+    background-color:white;
+    color:text;
+    height:40px;
+    width:93%;
+    margin-bottom:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hero-text a{
+    color:#007185;
+}
+.shop-section{
+    display:flex;
+    flex-wrap:wrap;
+    /* for making 4 bbelow 4 logo */
+    justify-content:space-evenly;
+    background-color:#e2e7e6;;
+}
+.box{
+    background-color:white;
+    height:380px;
+    width:22.5%;
+    padding:20px 0px 15px;
+    margin-top:20px;
+}
+.box-img{
+    height:300px;
+    background-size:cover;
+    margin-bottom:1rem;
+    margin-top:1rem;
+
+}
+.box-content{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.box-content p{
+    color:#007185;
+}
+.box-content p:hover{
+    color:#c24e00;
+}
+.footer{
+    margin-top:20px;
+}
+/* for making div in line block we use flex and wrap for making it copy but when in 
+anchor or paragraph we use display:block for bringing in one line and use flex to make it inn box and etc */
+.foot-panel1{
+    background-color:#37475a;
+    color:white;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0.9rem
+}
+.foot-panel1 a:hover{
+    color:#c24e00;
+    cursor:pointer;
+
+}
+.foot-panel2{
+
+    display:flex;
+    justify-content:center;
+    justify-content: space-evenly;
+
+    background-color:#222f3d;
+    color:white;
+    height:400px;
+    font-size:1rem;
+}
+ul{
+    margin-top:40px;
+}
+ul a{
+    display:block;
+    font-size:0.85rem;
+    color:#dddddd;
+    margin-top:10px;
+}
+ul a:hover{
+    text-decoration:underline;
+    cursor:pointer;
+}
+ul p{
+    font-size:1.1rem;
+}
+.foot-panel3{
+    background-color:#222f3d;
+    color:white;
+    border-top:0.5px solid white;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo{
+    background-image:url("amazon.logo.webp");
+    background-size:cover;
+    height:50px;
+    width:150px;
+}
+.foot-panel4{
+    background-color:#0f1111;
+    color:white;
+    height:100px;
+}
+.pages{
+    font-size:0.85rem;
+    text-align:center;
+    padding-top:25px;
+}
+.pages a{
+    margin-left:15px;
+}
+.copyright{
+    font-size:0.7rem;
+    text-align:center;
+    padding-top:6px;
+}
+
